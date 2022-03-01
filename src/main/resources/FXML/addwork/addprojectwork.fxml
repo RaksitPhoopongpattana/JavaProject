@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: F9E7CF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasktracking.controllers.addwork.AddProjectWork">
+   <children>
+      <Label layoutX="361.0" layoutY="34.0" text="เพิ่มงาน">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="177.0" prefHeight="21.0" prefWidth="72.0" text="ชื่อโครงงาน :" />
+      <TextField fx:id="projectname" layoutX="197.0" layoutY="175.0" promptText="ชื่อ" />
+      <Label layoutX="440.0" layoutY="177.0" prefHeight="21.0" prefWidth="102.0" text="หัวหน้าโครงงาน :" />
+      <Label layoutX="124.0" layoutY="237.0" prefHeight="21.0" prefWidth="72.0" text="วันที่เริ่มทำ :" />
+      <Label layoutX="108.0" layoutY="294.0" prefHeight="21.0" prefWidth="111.0" text="ลำดับความสำคัญ :" />
+      <TextField fx:id="priority" alignment="CENTER" layoutX="219.0" layoutY="289.0" prefHeight="31.0" prefWidth="47.0" promptText="0-4" />
+      <Button layoutX="346.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleUseBackToProject" prefHeight="30.0" prefWidth="72.0" text="ย้อนกลับ" />
+      <Button layoutX="440.0" layoutY="478.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="72.0" text="บันทึก" />
+      <Label layoutX="468.0" layoutY="294.0" prefHeight="21.0" prefWidth="72.0" text="หมวดหมู่ :" />
+      <TextField fx:id="category" layoutX="540.0" layoutY="289.0" prefHeight="31.0" prefWidth="187.0" promptText="หมวดหมู่" />
+      <DatePicker fx:id="datestart" layoutX="197.0" layoutY="232.0" prefHeight="31.0" prefWidth="187.0" promptText="เดือน/วัน/ปี" />
+      <Label layoutX="464.0" layoutY="239.0" prefHeight="17.0" prefWidth="79.0" text="วันที่สิ้นสุด :" />
+      <DatePicker fx:id="dateend" layoutX="540.0" layoutY="232.0" prefHeight="31.0" prefWidth="187.0" promptText="เดือน/วัน/ปี" />
+      <TextField fx:id="projectsupervisor" layoutX="540.0" layoutY="175.0" promptText="ชื่อหัวหน้าโครงงาน" />
+   </children>
+</AnchorPane>
